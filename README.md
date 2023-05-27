@@ -4,7 +4,8 @@ Go to the component you want to add your Dynamic Width Div Container
 
 ### import {Container} from 'react-dynamic-width-divs/dist';        //at the top
 
-## call ```<Container total={1000} items={[100,200]} labelLinesVisible={false} />```
+## call 
+```<Container total={1000} items={[100,200]} labelLinesVisible={false} />```
 
 # props -> 
 
