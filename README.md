@@ -2,35 +2,35 @@
 
 Go to the component you want to add your Dynamic Width Div Container 
 
-import {Container} from 'react-dynamic-width-divs/dist';        //at the top
+### import {Container} from 'react-dynamic-width-divs/dist';        //at the top
 
-call ```<Container total={1000} items={[100,200]} labelLinesVisible={false} />```
+## call ```<Container total={1000} items={[100,200]} labelLinesVisible={false} />```
 
-props -> 
+# props -> 
 
-## total
+### total
 total width
 
-## items
+### items
 type array ->  array of values you want [tip-> inner div width = items[i]/totol * 100 %]
 
-## containerStyles
+### containerStyles
 styles for outer most container type object
 
-## innerContainerStyles
+### innerContainerStyles
 styles for inner container type object
 
-## labelLinesVisible
+### labelLinesVisible
 label lines visible true/false
 
-## labelLinesContainer
+### labelLinesContainer
 styles for main label container type object
 
-## innerLabelLinesContainer
+### innerLabelLinesContainer
 styles for inner label container type object
 
-## hrStyles
+### hrStyles
 styles for label lines type object
 
-## labelStyles
+### labelStyles
 styles for label type object
