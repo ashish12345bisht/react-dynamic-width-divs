@@ -1,7 +1,10 @@
 {
-  "name": "dynamic-width-divs",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-dynamic-width-divs",
+  "version": "0.1.2",
+  "private": false,
+  "description":"Add Divs with dynamic widths",
+  "author":"Ashish Bisht",
+  "keywords":["react", "components", "UI", "dynamic", "width"],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -16,7 +19,8 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "del -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +44,10 @@
     "@babel/cli": "^7.21.5",
     "@babel/core": "^7.22.1",
     "@babel/preset-env": "^7.22.2"
+  },
+  "babel":{
+    "presets":[
+      "@babel/preset-react"
+    ]
   }
 }
